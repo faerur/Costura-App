@@ -49,7 +49,7 @@ function InformacoesInternasFicha({ route, navigation }) {
         {
           text: "Remover",
           onPress: () => {
-            console.log("Remover Pedido:", pedido.id); // Adicionado para debug
+            console.log("Remover Pedido:", pedido.id); 
             removerPedido(pedido.id);
             navigation.goBack();
           },
@@ -104,7 +104,7 @@ function InformacoesInternasFicha({ route, navigation }) {
         <View style={styles.containerBotoesInferiores}>
           <TouchableOpacity
             style={styles.botaoRemoverPedido}
-            onPress={handleRemoverPedido} // Atualizado para usar a função handleRemoverPedido
+            onPress={handleRemoverPedido} 
           >
             <Ionicons name="trash-outline" size={24} color="white" />
           </TouchableOpacity>
