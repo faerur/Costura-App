@@ -35,7 +35,7 @@ function TelaInicial() {
 
   function contarPedidosMesAnterior(pedidos) {
     const dataAtual = new Date();
-    const mesAnterior = dataAtual.getMonth() === 0 ? 12 : dataAtual.getMonth(); // Janeiro é 0, então tratamos o mês anterior como dezembro
+    const mesAnterior = dataAtual.getMonth() === 0 ? 12 : dataAtual.getMonth();
     const anoAnterior =
       dataAtual.getMonth() === 0
         ? dataAtual.getFullYear() - 1
