@@ -2,14 +2,13 @@ import React from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { usePedidos } from "../salvarDados/Persistencia";
 const TelaHistorico = () => {
-  const { pedidos } = usePedidos(); // Obtém os pedidos do contexto
-
+  const { pedidos } = usePedidos(); 
   const renderItem = ({ item }) => (
     <View style={styles.itemContainer}>
       <Text style={styles.itemText}>Data: {item.data}</Text>
-      <Text style={styles.itemText}>Preço: R$ {item.preco}</Text>
+      <Text style={styles.itemText}>PreÃ§o: R$ {item.preco}</Text>
       <Text style={styles.itemText}>
-        Finalizado: {item.finalizado ? "Sim" : "Não"}
+        Finalizado: {item.finalizado ? "Sim" : "NÃ£o"}
       </Text>
     </View>
   );
@@ -19,7 +18,7 @@ const TelaHistorico = () => {
       <FlatList
         data={pedidos}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()} // Certifique-se de que cada pedido tem uma propriedade única `id`
+        keyExtractor={(item) => item.id.toString()} // Certifique-se de que cada pedido tem uma propriedade Ãºnica `id`
       />
     </View>
   );
