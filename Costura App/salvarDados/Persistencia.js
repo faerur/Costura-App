@@ -47,7 +47,7 @@ export function PedidoProvider({ children }) {
         JSON.stringify(pedidosFinalizadosAtualizados)
       );
     } catch (error) {
-      console.error("Erro ao mover para histórico:", error);
+      console.error("Erro ao mover para histÃ³rico:", error);
     }
   }
 
@@ -79,7 +79,7 @@ export function PedidoProvider({ children }) {
         moverParaHistorico({ ...pedidoFinalizado, finalizado: true });
       }
 
-      AsyncStorage.setItem("pedidos", JSON.stringify(pedidoAtualizado)); // Atualiza persistência
+      AsyncStorage.setItem("pedidos", JSON.stringify(pedidoAtualizado)); 
       return pedidoAtualizado;
     });
   }
@@ -89,7 +89,7 @@ export function PedidoProvider({ children }) {
       const pedidosAtualizados = prevPedidos.map((pedido) =>
         pedido.id === id ? { ...pedido, ...dadosAtualizados } : pedido
       );
-      AsyncStorage.setItem("pedidos", JSON.stringify(pedidosAtualizados)); // Atualiza persistência
+      AsyncStorage.setItem("pedidos", JSON.stringify(pedidosAtualizados));
       return pedidosAtualizados;
     });
   }
