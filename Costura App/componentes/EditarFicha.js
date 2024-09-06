@@ -22,19 +22,18 @@ function EditarFicha({
   const [dataPedido, setDataPedido] = useState(dadosPedido.data);
 
   function handleSalvar() {
-    // Certifique-se de que você está passando todos os dados atualizados
     salvarAlteracoes({
       nomeCliente: cliente,
       telefone: telefone,
       preco: preco,
       observacoes: observacoes,
-      data: dataPedido, // Usando o estado atualizado de dataPedido
+      data: dataPedido, 
     });
     fecharModal();
   }
 
   function formatarData(data) {
-    setDataPedido(data); // Atualiza o estado de dataPedido com a data formatada
+    setDataPedido(data); 
   }
 
   return (
@@ -72,7 +71,7 @@ function EditarFicha({
             style={styles.dateInput}
             editable={false}
             placeholder="Data de Admissão"
-            value={dataPedido} // Exibe a data formatada
+            value={dataPedido}
             placeholderTextColor="black"
           />
           <DataModal formatarData={formatarData} />
