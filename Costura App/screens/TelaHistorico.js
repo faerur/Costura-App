@@ -18,7 +18,7 @@ const TelaHistorico = () => {
       <FlatList
         data={pedidos}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()} // Certifique-se de que cada pedido tem uma propriedade única `id`
+        keyExtractor={(item) => item.id.toString()} 
       />
     </View>
   );
