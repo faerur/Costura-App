@@ -116,7 +116,7 @@ function InputDados({ visivel, fecharInputModal }) {
 const styles = StyleSheet.create({
   telaConteiner: {
     flex: 1,
-    backgroundColor: "#fff", // Fundo branco para a área de input
+    backgroundColor: "#fff", 
   },
   scrollContainer: {
     paddingHorizontal: 20,
@@ -133,8 +133,8 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingVertical: 8,
     fontSize: 16,
-    color: "#333", // Texto preto para melhor visibilidade
-    backgroundColor: "#f0f0f0", // Fundo claro para melhor contraste
+    color: "#333", 
+    backgroundColor: "#f0f0f0", 
     borderRadius: 5,
   },
   observacoes: {
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
-    backgroundColor: "#e74c3c", // Cor vermelha para o botão cancelar
+    backgroundColor: "#e74c3c", 
     borderRadius: 5,
   },
   textoBotaoCancelar: {
